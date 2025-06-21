@@ -1,3 +1,17 @@
+/* GLOBAL BOX-SIZING RESET - Sangat penting */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* GLOBAL IMAGE RESPONSIVENESS */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Fonts */
 @font-face {
   font-family: "BebasNeue";
@@ -5,9 +19,11 @@
 }
 
 /* style */
-body {
+body,
+html {
   font-family: "BebasNeue";
   background-color: gray;
+  max-width: 100%;
 }
 
 .container {
@@ -35,7 +51,7 @@ body {
 
 .navbar .logo a img {
   background-position: 0 30px;
-  width: 80px;
+  width: 100%;
 }
 
 .navbar ul {
@@ -88,8 +104,8 @@ body {
 }
 
 .hero a {
-  display: inline-block;
-  width: 70px;
+  display: inline;
+  width: 80px;
   padding: 10px;
   font-size: 20px;
   text-align: center;
@@ -138,12 +154,13 @@ body {
 }
 
 .products .product {
-  width: 400px;
+  /* width: 400px; */
   height: 400px;
   padding: 5px;
   margin: 5px;
   text-align: center;
   background-color: rgb(209, 209, 209);
+  background-position: center;
 }
 
 .product a {
@@ -195,24 +212,27 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  gap: 3px;
+  /* margin-bottom: 50px; */
 }
 
 .h1-gallery {
   font-size: 80px;
   text-align: center;
-  margin: 30px;
+  /* margin: 30px; */
 }
 .gallery .foto1 img {
   width: 300px;
   height: 300px;
   padding: 5px;
-  margin: 3px;
+  /* margin: 3px; */
   background-color: rgb(209, 209, 209);
 }
 
 .footer {
-  width: 100%;
+  display: grid;
+  margin: auto;
+  max-width: 100%;
   height: 60px;
   color: white;
   background-color: black;
