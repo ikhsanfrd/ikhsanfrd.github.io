@@ -258,12 +258,13 @@ html {
       "feature-1"
       "feature-2";
   }
-}
 
-@media (max-width: 500px) {
   .navbar {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
 }
 
 /* Animation */
